@@ -1,0 +1,1573 @@
+2023-08-15 20:33:21 [INFO] Question: what is the greater value?
+2023-08-15 20:33:22 [INFO] Running PandasAI with openai LLM...
+2023-08-15 20:33:22 [INFO] Prompt ID: 903c08ed-7361-4815-a427-59afc163a9db
+2023-08-15 20:33:22 [INFO] error_code=invalid_api_key error_message='Incorrect API key provided: API_KEY. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2023-08-15 20:37:05 [INFO] Question: what is the greater value?
+2023-08-15 20:37:05 [INFO] Running PandasAI with openai LLM...
+2023-08-15 20:37:05 [INFO] Prompt ID: 57874580-e3cc-4025-9bad-b0b8a62c1c04
+2023-08-15 20:37:10 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+df = pd.DataFrame({'metadata': [0, 1, 3, 2]})
+
+greater_value = df['metadata'].max()
+
+greater_value
+                        ```
+                    
+2023-08-15 20:37:10 [INFO] 
+Code running:
+```
+greater_value = df['metadata'].max()
+greater_value
+```
+2023-08-15 20:37:10 [WARNING] Error of executing code
+2023-08-15 20:38:58 [INFO] Question: HELLO
+2023-08-15 20:38:58 [INFO] Running PandasAI with openai LLM...
+2023-08-15 20:38:58 [INFO] Prompt ID: d733b10b-268b-4923-813a-2ddf7610ce5a
+2023-08-15 20:39:02 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+data = {'0': [2, 1, 3]}
+df = pd.DataFrame(data)
+
+print(df)
+                        ```
+                    
+2023-08-15 20:39:02 [INFO] 
+Code running:
+```
+print(df)
+```
+2023-08-15 20:39:02 [INFO] Answer:    0
+0  1
+1  2
+2  3
+2023-08-15 20:39:02 [INFO] Executed in: 4.081193208694458s
+2023-08-15 20:40:17 [INFO] Question: WHAT IS THE TOP VALUE
+2023-08-15 20:40:17 [INFO] Running PandasAI with openai LLM...
+2023-08-15 20:40:17 [INFO] Prompt ID: 2ceefbd4-d273-4880-b1c9-aea566c04bbb
+2023-08-15 20:40:18 [INFO] 
+                        Code generated:
+                        ```
+                        df.max()
+                        ```
+                    
+2023-08-15 20:40:18 [INFO] 
+Code running:
+```
+df.max()
+```
+2023-08-15 20:40:18 [INFO] Answer: 0    3
+dtype: int64
+2023-08-15 20:40:18 [INFO] Executed in: 1.818077802658081s
+2023-08-15 20:45:00 [INFO] Question: what is the best name?
+2023-08-15 20:45:00 [INFO] Running PandasAI with openai LLM...
+2023-08-15 20:45:00 [INFO] Prompt ID: 46656579-8f2e-4595-9c16-79d3817424e5
+2023-08-15 20:45:04 [INFO] 
+                        Code generated:
+                        ```
+                        best_name = df[0].max()
+best_name
+                        ```
+                    
+2023-08-15 20:45:04 [INFO] 
+Code running:
+```
+best_name = df[0].max()
+best_name
+```
+2023-08-15 20:45:04 [INFO] Answer: youssef
+2023-08-15 20:45:04 [INFO] Executed in: 4.350922346115112s
+2023-08-15 20:45:43 [INFO] Question: what is the gay name?
+2023-08-15 20:45:43 [INFO] Running PandasAI with openai LLM...
+2023-08-15 20:45:43 [INFO] Prompt ID: f1688814-d6cd-4c7d-9524-929880fc52f0
+2023-08-15 20:45:46 [INFO] 
+                        Code generated:
+                        ```
+                        df.columns[0]
+                        ```
+                    
+2023-08-15 20:45:46 [INFO] 
+Code running:
+```
+df.columns[0]
+```
+2023-08-15 20:45:46 [INFO] Answer: 0
+2023-08-15 20:45:46 [INFO] Executed in: 2.9896786212921143s
+2023-08-15 20:46:42 [INFO] Question: who what sex a lot between those names?
+2023-08-15 20:46:42 [INFO] Running PandasAI with openai LLM...
+2023-08-15 20:46:42 [INFO] Prompt ID: 0f89748c-0278-4d35-9e9e-9b57d71301f7
+2023-08-15 20:46:46 [INFO] 
+                        Code generated:
+                        ```
+                        df['name'].value_counts().idxmax()
+                        ```
+                    
+2023-08-15 20:46:46 [INFO] 
+Code running:
+```
+df['name'].value_counts().idxmax()
+```
+2023-08-15 20:46:46 [WARNING] Error of executing code
+2023-08-15 20:49:03 [INFO] Question: where is youssef himanui now ?
+2023-08-15 20:49:03 [INFO] Running PandasAI with openai LLM...
+2023-08-15 20:49:03 [INFO] Prompt ID: 081dd756-2008-4d2d-84d6-d24464db986f
+2023-08-15 20:49:05 [INFO] 
+                        Code generated:
+                        ```
+                        df.iloc[0, 0]
+                        ```
+                    
+2023-08-15 20:49:05 [INFO] 
+Code running:
+```
+df.iloc[0, 0]
+```
+2023-08-15 20:49:05 [INFO] Answer: youssef himanui
+2023-08-15 20:49:05 [INFO] Executed in: 2.2624521255493164s
+2023-08-15 20:49:52 [INFO] Question: where is he now?
+2023-08-15 20:49:52 [INFO] Running PandasAI with openai LLM...
+2023-08-15 20:49:52 [INFO] Prompt ID: 5fa18e3c-6ea4-4e71-99c3-461790a78f83
+2023-08-15 20:49:54 [INFO] 
+                        Code generated:
+                        ```
+                        df.iloc[0, 0]
+                        ```
+                    
+2023-08-15 20:49:54 [INFO] 
+Code running:
+```
+df.iloc[0, 0]
+```
+2023-08-15 20:49:54 [INFO] Answer: youssef himanui
+2023-08-15 20:49:54 [INFO] Executed in: 2.858820915222168s
+2023-08-15 20:52:34 [INFO] Question: wtf is that?
+2023-08-15 20:52:34 [INFO] Running PandasAI with openai LLM...
+2023-08-15 20:52:34 [INFO] Prompt ID: 7b495dee-1a2b-4ce6-b912-dd308f0dc1ef
+2023-08-15 20:52:39 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+data = {'0': ['youssef himanui']}
+df = pd.DataFrame(data)
+
+print(df)
+                        ```
+                    
+2023-08-15 20:52:39 [INFO] 
+Code running:
+```
+print(df)
+```
+2023-08-15 20:52:39 [INFO] Answer:                  0
+0  youssef himanui
+2023-08-15 20:52:39 [INFO] Executed in: 5.520527601242065s
+2023-08-21 02:07:42 [INFO] Question: who is the best in terms of experiences?
+2023-08-21 02:07:42 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:07:42 [INFO] Prompt ID: 17da7986-fd70-460b-93ea-423b6f4f470e
+2023-08-21 02:07:45 [INFO] 
+                        Code generated:
+                        ```
+                        df['experiences'].idxmax()
+                        ```
+                    
+2023-08-21 02:07:45 [INFO] 
+Code running:
+```
+df['experiences'].idxmax()
+```
+2023-08-21 02:07:45 [INFO] Answer: 1
+2023-08-21 02:07:45 [INFO] Executed in: 2.241593360900879s
+2023-08-21 02:14:44 [INFO] Question: which are the best canditates with the heighest experiences and certificates?
+2023-08-21 02:14:44 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:14:44 [INFO] Prompt ID: 523ecd38-3f05-4b7f-a139-3f73c445482d
+2023-08-21 02:14:49 [INFO] 
+                        Code generated:
+                        ```
+                        df['total'] = df['experiences'] + df['certificates']
+best_candidates = df[df['total'] == df['total'].max()]['candidates'].tolist()
+best_candidates
+                        ```
+                    
+2023-08-21 02:14:49 [INFO] 
+Code running:
+```
+df['total'] = df['experiences'] + df['certificates']
+best_candidates = df[df['total'] == df['total'].max()]['candidates'].tolist()
+best_candidates
+```
+2023-08-21 02:14:49 [INFO] Answer: ['jihad', 'asma']
+2023-08-21 02:14:49 [INFO] Executed in: 5.681421995162964s
+2023-08-21 02:17:52 [INFO] Question: which are the best canditates with the heighest experiences and certificates?
+2023-08-21 02:17:52 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:17:52 [INFO] Prompt ID: 65056252-4959-40c9-b5f8-d792c74fa2f3
+2023-08-21 02:17:52 [INFO] Using cached response
+2023-08-21 02:17:52 [INFO] 
+Code running:
+```
+df['total'] = df['experiences'] + df['certificates']
+best_candidates = df[df['total'] == df['total'].max()]['candidates'].tolist()
+best_candidates
+```
+2023-08-21 02:17:52 [INFO] Answer: ['jihad', 'asma']
+2023-08-21 02:17:52 [INFO] Executed in: 0.0s
+2023-08-21 02:17:52 [INFO] Question: plot the histogram of candidates
+2023-08-21 02:17:52 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:17:52 [INFO] Prompt ID: d5125356-1421-4d69-9ce5-31a863528a2b
+2023-08-21 02:17:58 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+df['candidates'].plot(kind='hist')
+plt.xlabel('Candidates')
+plt.ylabel('Frequency')
+plt.title('Histogram of Candidates')
+plt.show()
+                        ```
+                    
+2023-08-21 02:17:58 [INFO] 
+Code running:
+```
+df['candidates'].plot(kind='hist')
+plt.xlabel('Candidates')
+plt.ylabel('Frequency')
+plt.title('Histogram of Candidates')
+plt.show()
+plt.close('all')
+```
+2023-08-21 02:18:04 [INFO] generated new fontManager
+2023-08-21 02:18:06 [WARNING] Error of executing code
+2023-08-21 02:18:53 [INFO] Question: which are the best canditates with the heighest experiences and certificates?
+2023-08-21 02:18:53 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:18:53 [INFO] Prompt ID: a508d354-dbf1-4e71-8bf8-06ef83bbc0bc
+2023-08-21 02:18:53 [INFO] Using cached response
+2023-08-21 02:18:53 [INFO] 
+Code running:
+```
+df['total'] = df['experiences'] + df['certificates']
+best_candidates = df[df['total'] == df['total'].max()]['candidates'].tolist()
+best_candidates
+```
+2023-08-21 02:18:53 [INFO] Answer: ['jihad', 'asma']
+2023-08-21 02:18:53 [INFO] Executed in: 0.0s
+2023-08-21 02:18:53 [INFO] Question: plot the histogram of candidates
+2023-08-21 02:18:53 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:18:53 [INFO] Prompt ID: 273f9b22-eb2d-414d-9990-e87648c08c97
+2023-08-21 02:18:53 [INFO] Using cached response
+2023-08-21 02:18:53 [INFO] 
+Code running:
+```
+df['candidates'].plot(kind='hist')
+plt.xlabel('Candidates')
+plt.ylabel('Frequency')
+plt.title('Histogram of Candidates')
+plt.show()
+plt.close('all')
+```
+2023-08-21 02:18:53 [WARNING] Error of executing code
+2023-08-21 02:19:00 [WARNING] Error of executing code
+2023-08-21 02:19:00 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-21 02:19:04 [WARNING] Error of executing code
+2023-08-21 02:19:04 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-21 02:19:09 [WARNING] Error of executing code
+2023-08-21 02:19:09 [WARNING] Failed to execute code with a correction framework [retry number: 3]
+2023-08-21 02:19:09 [ERROR] Unable to fix TypeError with error correction framework
+2023-08-21 02:19:48 [INFO] Question: which are the best canditates with the heighest experiences and certificates?
+2023-08-21 02:19:48 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:19:48 [INFO] Prompt ID: 1294fc75-c489-4191-82cc-a22858ddb419
+2023-08-21 02:19:48 [INFO] Using cached response
+2023-08-21 02:19:48 [INFO] 
+Code running:
+```
+df['total'] = df['experiences'] + df['certificates']
+best_candidates = df[df['total'] == df['total'].max()]['candidates'].tolist()
+best_candidates
+```
+2023-08-21 02:19:48 [INFO] Answer: ['jihad', 'asma']
+2023-08-21 02:19:48 [INFO] Executed in: 0.0s
+2023-08-21 02:19:48 [INFO] Question: plot the histogram
+2023-08-21 02:19:48 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:19:48 [INFO] Prompt ID: 931aad74-8c7f-476b-be0c-9d7d4fdcce0f
+2023-08-21 02:19:53 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+df['total'].plot(kind='hist')
+
+plt.xlabel('Total')
+plt.ylabel('Frequency')
+plt.title('Histogram of Total')
+
+plt.show()
+                        ```
+                    
+2023-08-21 02:19:53 [INFO] 
+Code running:
+```
+df['total'].plot(kind='hist')
+plt.xlabel('Total')
+plt.ylabel('Frequency')
+plt.title('Histogram of Total')
+plt.show()
+plt.close('all')
+```
+2023-08-21 02:20:06 [INFO] Answer: None
+2023-08-21 02:20:06 [INFO] Executed in: 18.096460580825806s
+2023-08-21 02:20:25 [INFO] Question: which are the best canditates with the heighest experiences and certificates?
+2023-08-21 02:20:25 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:20:25 [INFO] Prompt ID: 835d546c-bf9a-43b5-bf69-5aa11fbb2e68
+2023-08-21 02:20:25 [INFO] Using cached response
+2023-08-21 02:20:25 [INFO] 
+Code running:
+```
+df['total'] = df['experiences'] + df['certificates']
+best_candidates = df[df['total'] == df['total'].max()]['candidates'].tolist()
+best_candidates
+```
+2023-08-21 02:20:25 [INFO] Answer: ['jihad', 'asma']
+2023-08-21 02:20:25 [INFO] Executed in: 0.0s
+2023-08-21 02:20:25 [INFO] Question: plot the histogram of the certificates
+2023-08-21 02:20:25 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:20:25 [INFO] Prompt ID: c0ccb6ca-0e2c-4254-8569-1dc1de4496cd
+2023-08-21 02:20:34 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+df['certificates'].plot(kind='hist')
+plt.xlabel('Certificates')
+plt.ylabel('Frequency')
+plt.title('Histogram of Certificates')
+plt.show()
+                        ```
+                    
+2023-08-21 02:20:34 [INFO] 
+Code running:
+```
+df['certificates'].plot(kind='hist')
+plt.xlabel('Certificates')
+plt.ylabel('Frequency')
+plt.title('Histogram of Certificates')
+plt.show()
+plt.close('all')
+```
+2023-08-21 02:20:47 [INFO] Answer: None
+2023-08-21 02:20:47 [INFO] Executed in: 21.230928659439087s
+2023-08-21 02:21:47 [INFO] Question: which are the best canditates with the heighest experiences and certificates?
+2023-08-21 02:21:47 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:21:47 [INFO] Prompt ID: c78e6e59-27eb-4989-b14c-a81f4494d7fa
+2023-08-21 02:21:47 [INFO] Using cached response
+2023-08-21 02:21:47 [INFO] 
+Code running:
+```
+df['total'] = df['experiences'] + df['certificates']
+best_candidates = df[df['total'] == df['total'].max()]['candidates'].tolist()
+best_candidates
+```
+2023-08-21 02:21:47 [INFO] Answer: ['jihad', 'asma']
+2023-08-21 02:21:47 [INFO] Executed in: 0.0s
+2023-08-21 02:22:44 [INFO] Question: which are the best canditates with the heighest experiences and certificates?
+2023-08-21 02:22:44 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:22:44 [INFO] Prompt ID: 38dcac6c-f139-4f89-bfbf-482028ea4e88
+2023-08-21 02:22:44 [INFO] Using cached response
+2023-08-21 02:22:44 [INFO] 
+Code running:
+```
+df['total'] = df['experiences'] + df['certificates']
+best_candidates = df[df['total'] == df['total'].max()]['candidates'].tolist()
+best_candidates
+```
+2023-08-21 02:22:44 [INFO] Answer: ['jihad', 'asma', 'ayoub']
+2023-08-21 02:22:44 [INFO] Executed in: 0.0009982585906982422s
+2023-08-21 02:23:12 [INFO] Question: which are the tow best canditates with the heighest experiences and certificates?
+2023-08-21 02:23:12 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:23:12 [INFO] Prompt ID: a674ada3-fea1-4c0b-b86c-4ec75c5897c1
+2023-08-21 02:23:16 [INFO] 
+                        Code generated:
+                        ```
+                        df_sorted = df.sort_values(by=['experiences', 'certificates'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+                        ```
+                    
+2023-08-21 02:23:16 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['experiences', 'certificates'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-21 02:23:16 [INFO] Answer: ['ayoub', 'jihad']
+2023-08-21 02:23:16 [INFO] Executed in: 3.883427143096924s
+2023-08-21 02:24:14 [INFO] Question: which are the tow best canditates with the heighest experiences and certificates?
+2023-08-21 02:24:14 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:24:14 [INFO] Prompt ID: ee572f66-c0c8-414f-8a40-db19d551bad5
+2023-08-21 02:24:14 [INFO] Using cached response
+2023-08-21 02:24:14 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['experiences', 'certificates'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-21 02:24:14 [INFO] Answer: ['ayoub', 'amina']
+2023-08-21 02:24:14 [INFO] Executed in: 0.0009996891021728516s
+2023-08-21 02:25:00 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-21 02:25:00 [INFO] Running PandasAI with openai LLM...
+2023-08-21 02:25:00 [INFO] Prompt ID: f9d041f9-2718-4b7d-8c68-7937233b519c
+2023-08-21 02:25:07 [INFO] 
+                        Code generated:
+                        ```
+                        df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+                        ```
+                    
+2023-08-21 02:25:07 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-21 02:25:07 [INFO] Answer: ['amina', 'jihad']
+2023-08-21 02:25:07 [INFO] Executed in: 7.449494123458862s
+2023-08-23 19:53:15 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 19:53:15 [INFO] Running PandasAI with openai LLM...
+2023-08-23 19:53:15 [INFO] Prompt ID: e923d949-c173-4545-b654-f0cb3089a634
+2023-08-23 19:53:18 [INFO] 
+                        Code generated:
+                        ```
+                        df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+                        ```
+                    
+2023-08-23 19:53:18 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 19:53:18 [INFO] Answer: ['amina', 'jihad']
+2023-08-23 19:53:18 [INFO] Executed in: 2.795741081237793s
+2023-08-23 19:57:53 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-23 19:57:58 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 19:57:58 [INFO] Running PandasAI with openai LLM...
+2023-08-23 19:57:58 [INFO] Prompt ID: 034ba16f-4027-46da-8c82-3b640620eb60
+2023-08-23 19:57:58 [INFO] Using cached response
+2023-08-23 19:57:58 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 19:57:58 [INFO] Answer: ['amina', 'jihad']
+2023-08-23 19:57:58 [INFO] Executed in: 0.0074005126953125s
+2023-08-23 19:57:58 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 19:57:58 [INFO] Running PandasAI with openai LLM...
+2023-08-23 19:57:58 [INFO] Prompt ID: 7d65f0cf-0c74-4f16-8a49-3cfcb8b5efdd
+2023-08-23 19:57:58 [INFO] Using cached response
+2023-08-23 19:57:58 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 19:57:58 [INFO] Answer: ['amina', 'jihad']
+2023-08-23 19:57:58 [INFO] Executed in: 0.008212804794311523s
+2023-08-23 19:57:58 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 19:57:58 [INFO] Running PandasAI with openai LLM...
+2023-08-23 19:57:58 [INFO] Prompt ID: 803f39a7-b0ae-4024-943c-9ae70684f77e
+2023-08-23 19:57:58 [INFO] Using cached response
+2023-08-23 19:57:58 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 19:57:58 [INFO] Answer: ['amina', 'jihad']
+2023-08-23 19:57:58 [INFO] Executed in: 0.0071010589599609375s
+2023-08-23 19:58:26 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-23 19:58:31 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 19:58:31 [INFO] Running PandasAI with openai LLM...
+2023-08-23 19:58:31 [INFO] Prompt ID: a4db8cfa-ca2a-4bfa-8e17-1e6315794890
+2023-08-23 19:58:31 [INFO] Using cached response
+2023-08-23 19:58:31 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 19:58:31 [INFO] Answer: ['amina', 'jihad']
+2023-08-23 19:58:31 [INFO] Executed in: 0.007249116897583008s
+2023-08-23 19:58:31 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 19:58:31 [INFO] Running PandasAI with openai LLM...
+2023-08-23 19:58:31 [INFO] Prompt ID: fc20d079-8149-4338-a60d-b67c8f7f4d89
+2023-08-23 19:58:31 [INFO] Using cached response
+2023-08-23 19:58:31 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 19:58:31 [INFO] Answer: ['amina', 'jihad']
+2023-08-23 19:58:31 [INFO] Executed in: 0.006416797637939453s
+2023-08-23 19:58:31 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 19:58:31 [INFO] Running PandasAI with openai LLM...
+2023-08-23 19:58:31 [INFO] Prompt ID: e06e7845-81b4-498a-ab28-da9f3a9c7c08
+2023-08-23 19:58:31 [INFO] Using cached response
+2023-08-23 19:58:31 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 19:58:31 [INFO] Answer: ['amina', 'jihad']
+2023-08-23 19:58:31 [INFO] Executed in: 0.007725954055786133s
+2023-08-23 20:01:45 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-23 20:01:50 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:01:50 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:01:50 [INFO] Prompt ID: a9f5bdfd-df88-49ee-93b0-856aade58cf2
+2023-08-23 20:01:50 [INFO] Using cached response
+2023-08-23 20:01:50 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:01:50 [INFO] Answer: ['amina', 'jihad']
+2023-08-23 20:01:50 [INFO] Executed in: 0.0s
+2023-08-23 20:01:50 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:01:50 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:01:50 [INFO] Prompt ID: c9b6d525-1f73-48ba-8bc5-783177628e74
+2023-08-23 20:01:50 [INFO] Using cached response
+2023-08-23 20:01:50 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:01:50 [INFO] Answer: ['amina', 'jihad']
+2023-08-23 20:01:50 [INFO] Executed in: 0.005754232406616211s
+2023-08-23 20:08:15 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:08:15 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:08:15 [INFO] Prompt ID: 7fa25869-cad8-4331-8d97-2c89f669c5d4
+2023-08-23 20:08:15 [INFO] Using cached response
+2023-08-23 20:08:15 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:08:15 [WARNING] Error of executing code
+2023-08-23 20:08:18 [WARNING] Error of executing code
+2023-08-23 20:08:18 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-23 20:08:20 [WARNING] Error of executing code
+2023-08-23 20:08:20 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-23 20:08:28 [WARNING] Error of executing code
+2023-08-23 20:08:28 [WARNING] Failed to execute code with a correction framework [retry number: 3]
+2023-08-23 20:08:28 [ERROR] Unable to fix KeyError with error correction framework
+2023-08-23 20:14:12 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-23 20:14:17 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:14:17 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:14:17 [INFO] Prompt ID: 6f9260b0-067b-4cc8-8307-be750460c2af
+2023-08-23 20:14:17 [INFO] Using cached response
+2023-08-23 20:14:17 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:14:17 [WARNING] Error of executing code
+2023-08-23 20:14:20 [WARNING] Error of executing code
+2023-08-23 20:14:20 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-23 20:17:59 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:17:59 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:17:59 [INFO] Prompt ID: 846005b2-938f-4d70-8adb-9fd55ac0ff86
+2023-08-23 20:17:59 [INFO] Using cached response
+2023-08-23 20:17:59 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:17:59 [WARNING] Error of executing code
+2023-08-23 20:18:03 [WARNING] Error of executing code
+2023-08-23 20:18:03 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-23 20:18:06 [WARNING] Error of executing code
+2023-08-23 20:18:06 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-23 20:18:09 [WARNING] Error of executing code
+2023-08-23 20:18:09 [WARNING] Failed to execute code with a correction framework [retry number: 3]
+2023-08-23 20:18:09 [ERROR] Unable to fix KeyError with error correction framework
+2023-08-23 20:18:09 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:18:09 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:18:09 [INFO] Prompt ID: 7cc8cc77-3205-4734-b292-f56eba67d5d3
+2023-08-23 20:18:09 [INFO] Using cached response
+2023-08-23 20:18:09 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:18:09 [WARNING] Error of executing code
+2023-08-23 20:18:09 [INFO] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-N8Jg0gSzLHKureBQLSwJccez on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-08-23 20:18:09 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:18:09 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:18:09 [INFO] Prompt ID: 6d83b5a2-421d-4552-b3d3-87f165726479
+2023-08-23 20:18:09 [INFO] Using cached response
+2023-08-23 20:18:09 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:18:09 [WARNING] Error of executing code
+2023-08-23 20:18:09 [INFO] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-N8Jg0gSzLHKureBQLSwJccez on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-08-23 20:18:36 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-23 20:18:41 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:18:41 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:18:41 [INFO] Prompt ID: dbf73978-979d-4a4b-bb60-d0ca3ea500ef
+2023-08-23 20:18:41 [INFO] Using cached response
+2023-08-23 20:18:41 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:18:41 [WARNING] Error of executing code
+2023-08-23 20:18:45 [WARNING] Error of executing code
+2023-08-23 20:18:45 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-23 20:18:47 [WARNING] Error of executing code
+2023-08-23 20:18:47 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-23 20:18:47 [INFO] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-N8Jg0gSzLHKureBQLSwJccez on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-08-23 20:18:47 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:18:47 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:18:47 [INFO] Prompt ID: 9b0a2b09-aae1-4c78-892a-9076e100d57b
+2023-08-23 20:18:47 [INFO] Using cached response
+2023-08-23 20:18:47 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:18:47 [WARNING] Error of executing code
+2023-08-23 20:18:48 [INFO] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-N8Jg0gSzLHKureBQLSwJccez on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-08-23 20:18:48 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:18:48 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:18:48 [INFO] Prompt ID: a98cdc96-c6e9-47ed-a4e0-f8912ed6c140
+2023-08-23 20:18:48 [INFO] Using cached response
+2023-08-23 20:18:48 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:18:48 [WARNING] Error of executing code
+2023-08-23 20:18:48 [INFO] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-N8Jg0gSzLHKureBQLSwJccez on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-08-23 20:19:39 [INFO] Question: which are the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:19:39 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:19:39 [INFO] Prompt ID: 8f1adeab-635d-4b7a-a0f7-f509bed0da40
+2023-08-23 20:19:39 [INFO] Using cached response
+2023-08-23 20:19:39 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:19:39 [INFO] Answer: ['amina', 'jihad']
+2023-08-23 20:19:39 [INFO] Executed in: 0.0s
+2023-08-23 20:20:44 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-23 20:20:49 [INFO] Question: which are the tow best canditates's names and experiences and certificates with the heighest certificates and experiences ?
+2023-08-23 20:20:49 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:20:49 [INFO] Prompt ID: 607bd66e-7610-4f3b-96c5-716dd774a5f3
+2023-08-23 20:20:49 [INFO] Question: which are the tow best canditates's names and experiences and certificates with the heighest certificates and experiences ?
+2023-08-23 20:20:49 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:20:49 [INFO] Prompt ID: f77448d1-d44e-4de5-84c1-a1d6b16526ce
+2023-08-23 20:20:49 [INFO] Question: which are the tow best canditates's names and experiences and certificates with the heighest certificates and experiences ?
+2023-08-23 20:20:49 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:20:49 [INFO] Prompt ID: 0df459ca-1004-4456-af5f-d2d33f18799c
+2023-08-23 20:21:14 [INFO] Question: which are the tow best canditates's names and experiences with the heighest certificates and experiences ?
+2023-08-23 20:21:14 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:21:14 [INFO] Prompt ID: baf73fb1-459f-458e-9e96-ea9cd20bf337
+2023-08-23 20:21:17 [INFO] 
+                        Code generated:
+                        ```
+                        df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_two_candidates = df_sorted.head(2)
+top_two_candidates[['candidates', 'experiences', 'certificates']]
+                        ```
+                    
+2023-08-23 20:21:17 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_two_candidates = df_sorted.head(2)
+top_two_candidates[['candidates', 'experiences', 'certificates']]
+```
+2023-08-23 20:21:17 [INFO] Answer:   candidates  experiences  certificates
+5      amina            6             6
+1      jihad            5             6
+2023-08-23 20:21:17 [INFO] Executed in: 3.4919984340667725s
+2023-08-23 20:21:37 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-23 20:21:42 [INFO] Question: which are the tow best canditates's names and experiences with the heighest certificates and experiences ?
+2023-08-23 20:21:42 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:21:42 [INFO] Prompt ID: 9af0c283-ee64-47a8-904f-e4f8f281fc4a
+2023-08-23 20:21:42 [INFO] Question: which are the tow best canditates's names and experiences with the heighest certificates and experiences ?
+2023-08-23 20:21:42 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:21:42 [INFO] Prompt ID: 6c76fe7d-a837-45a6-843c-e5086f56411e
+2023-08-23 20:21:42 [INFO] Question: which are the tow best canditates's names and experiences with the heighest certificates and experiences ?
+2023-08-23 20:21:42 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:21:42 [INFO] Prompt ID: e3c57323-4d33-4ae1-a44e-20aaec49321e
+2023-08-23 20:22:46 [INFO] Question: which are the tow best canditates's names and experiences with the heighest certificates and experiences ?
+2023-08-23 20:22:46 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:22:46 [INFO] Prompt ID: 88c3b1bc-c7af-40e8-933f-e09f2ac5838b
+2023-08-23 20:22:46 [INFO] Using cached response
+2023-08-23 20:22:46 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_two_candidates = df_sorted.head(2)
+top_two_candidates[['candidates', 'experiences', 'certificates']]
+```
+2023-08-23 20:22:46 [INFO] Answer:   candidates  experiences  certificates
+5      amina            6             6
+1      jihad            5             6
+2023-08-23 20:22:46 [INFO] Executed in: 0.015642881393432617s
+2023-08-23 20:23:47 [INFO] Question: which are the tow best canditates's names and experiences with the heighest certificates and experiences ?
+2023-08-23 20:23:47 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:23:47 [INFO] Prompt ID: 554ea248-6070-4578-a576-039e18853373
+2023-08-23 20:23:47 [INFO] Using cached response
+2023-08-23 20:23:47 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_two_candidates = df_sorted.head(2)
+top_two_candidates[['candidates', 'experiences', 'certificates']]
+```
+2023-08-23 20:23:47 [INFO] Answer:   candidates  experiences  certificates
+5      amina            6             6
+1      jihad            5             6
+2023-08-23 20:23:47 [INFO] Executed in: 0.01711297035217285s
+2023-08-23 20:24:10 [INFO] Question: which are the tow best canditates's names and experiences with the heighest certificates and experiences ?
+2023-08-23 20:24:10 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:24:10 [INFO] Prompt ID: 316d0942-c51c-44b6-828c-1139f3e8dadc
+2023-08-23 20:24:10 [INFO] Using cached response
+2023-08-23 20:24:10 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_two_candidates = df_sorted.head(2)
+top_two_candidates[['candidates', 'experiences', 'certificates']]
+```
+2023-08-23 20:24:10 [INFO] Answer:   candidates  experiences  certificates
+5      amina            6             6
+1      jihad            5             6
+2023-08-23 20:24:10 [INFO] Executed in: 0.017847776412963867s
+2023-08-23 20:29:56 [INFO] Question: give me the list of the tow best canditates's names and experiences with the heighest certificates and experiences ?
+2023-08-23 20:29:56 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:29:56 [INFO] Prompt ID: 05a50957-3fc1-4c31-a05e-3e2fc57913ca
+2023-08-23 20:29:59 [INFO] 
+                        Code generated:
+                        ```
+                        df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)
+top_candidates[['candidates', 'experiences']]
+                        ```
+                    
+2023-08-23 20:29:59 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)
+top_candidates[['candidates', 'experiences']]
+```
+2023-08-23 20:29:59 [INFO] Answer:   candidates  experiences
+5      amina            6
+1      jihad            5
+2023-08-23 20:29:59 [INFO] Executed in: 2.663831949234009s
+2023-08-23 20:30:27 [INFO] Question: give me the list of the tow best canditates with the heighest certificates and experiences ?
+2023-08-23 20:30:27 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:30:27 [INFO] Prompt ID: bb8bc19d-49c9-4d73-b907-f90297c60799
+2023-08-23 20:30:32 [INFO] 
+                        Code generated:
+                        ```
+                        df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+                        ```
+                    
+2023-08-23 20:30:32 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidates'].tolist()
+top_candidates
+```
+2023-08-23 20:30:32 [INFO] Answer: ['amina', 'jihad']
+2023-08-23 20:30:32 [INFO] Executed in: 4.548388719558716s
+2023-08-23 20:41:27 [INFO] Question: give me the list of the tow best canditates's candidate_id with the heighest certificates and experiences ?
+2023-08-23 20:41:27 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:41:27 [INFO] Prompt ID: aa46a429-8481-4318-bbd8-116f46ad81c4
+2023-08-23 20:41:39 [INFO] 
+                        Code generated:
+                        ```
+                        df['candidate_id'] = df.index + 1
+df['total'] = df['experiences'] + df['certificates']
+df_sorted = df.sort_values(by='total', ascending=False)
+top_candidates = df_sorted.head(2)['candidate_id'].tolist()
+top_candidates
+                        ```
+                    
+2023-08-23 20:41:39 [INFO] 
+Code running:
+```
+df['candidate_id'] = df.index + 1
+df['total'] = df['experiences'] + df['certificates']
+df_sorted = df.sort_values(by='total', ascending=False)
+top_candidates = df_sorted.head(2)['candidate_id'].tolist()
+top_candidates
+```
+2023-08-23 20:41:39 [INFO] Answer: [6, 2]
+2023-08-23 20:41:39 [INFO] Executed in: 11.529661178588867s
+2023-08-23 20:44:47 [INFO] Question: give me the list of the tow best  with the heighest certificates and experiences ?
+2023-08-23 20:44:47 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:44:47 [INFO] Prompt ID: 3ecbbd49-9feb-42b0-b935-26986052688b
+2023-08-23 20:44:50 [INFO] 
+                        Code generated:
+                        ```
+                        df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_two = df_sorted.head(2)['id'].tolist()
+top_two
+                        ```
+                    
+2023-08-23 20:44:50 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_two = df_sorted.head(2)['id'].tolist()
+top_two
+```
+2023-08-23 20:44:50 [INFO] Answer: ['6', '2']
+2023-08-23 20:44:50 [INFO] Executed in: 2.933765172958374s
+2023-08-23 20:46:29 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-23 20:46:34 [INFO] Question: which are the tow best with the heighest certificates and experiences ?
+2023-08-23 20:46:34 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:46:34 [INFO] Prompt ID: 671c4cfa-4f4e-4640-a661-a2e718165bf2
+2023-08-23 20:46:34 [INFO] Question: which are the tow best with the heighest certificates and experiences ?
+2023-08-23 20:46:34 [INFO] Running PandasAI with openai LLM...
+2023-08-23 20:46:34 [INFO] Prompt ID: 03456709-21c1-4119-97ab-4a5c1a5f0db2
+2023-08-25 12:04:34 [INFO] Question: which are the tow best with the heighest certificates and experiences ?
+2023-08-25 12:04:34 [INFO] Running PandasAI with openai LLM...
+2023-08-25 12:04:34 [INFO] Prompt ID: 1d25c9ab-0eee-4edb-a55f-110b8717d03b
+2023-08-25 12:04:37 [INFO] 
+                        Code generated:
+                        ```
+                        df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+best_two = df_sorted.head(2)
+best_two
+                        ```
+                    
+2023-08-25 12:04:37 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+best_two = df_sorted.head(2)
+best_two
+```
+2023-08-25 12:04:37 [INFO] Answer:   id  experiences  certificates
+5  6            6             6
+1  2            5             6
+2023-08-25 12:04:37 [INFO] Executed in: 3.3189680576324463s
+2023-08-25 12:06:12 [INFO] Question: which are the tow best ids with the heighest certificates and experiences ?
+2023-08-25 12:06:12 [INFO] Running PandasAI with openai LLM...
+2023-08-25 12:06:12 [INFO] Prompt ID: d876db9a-d2f8-49e2-aea3-6aa5fa745375
+2023-08-25 12:06:21 [INFO] 
+                        Code generated:
+                        ```
+                        df.nlargest(2, ['certificates', 'experiences'])['id']
+                        ```
+                    
+2023-08-25 12:06:21 [INFO] 
+Code running:
+```
+df.nlargest(2, ['certificates', 'experiences'])['id']
+```
+2023-08-25 12:06:21 [INFO] Answer: 5    6
+1    2
+Name: id, dtype: object
+2023-08-25 12:06:21 [INFO] Executed in: 9.028429508209229s
+2023-08-25 12:33:39 [INFO] Question: which are the tow best with the heighest certificates and experiences ?
+2023-08-25 12:33:39 [INFO] Running PandasAI with openai LLM...
+2023-08-25 12:33:39 [INFO] Prompt ID: 97ea9db7-663b-478e-ae8d-74be537e078f
+2023-08-25 12:34:04 [WARNING] Not Found: /favicon.ico
+2023-08-25 12:51:55 [INFO] Question: which are the tow best ids with the heighest certificates and experiences ?
+2023-08-25 12:51:55 [INFO] Running PandasAI with openai LLM...
+2023-08-25 12:51:55 [INFO] Prompt ID: 6f039f1b-205f-4b33-8b23-c4e72015343a
+2023-08-25 12:51:55 [INFO] Using cached response
+2023-08-25 12:51:55 [INFO] 
+Code running:
+```
+df.nlargest(2, ['certificates', 'experiences'])['id']
+```
+2023-08-25 12:51:55 [WARNING] Error of executing code
+2023-08-25 12:51:57 [WARNING] Error of executing code
+2023-08-25 12:51:57 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-25 12:51:59 [WARNING] Error of executing code
+2023-08-25 12:51:59 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-25 12:52:01 [WARNING] Error of executing code
+2023-08-25 12:52:01 [WARNING] Failed to execute code with a correction framework [retry number: 3]
+2023-08-25 12:52:01 [ERROR] Unable to fix KeyError with error correction framework
+2023-08-25 12:52:39 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 12:52:39 [INFO] Running PandasAI with openai LLM...
+2023-08-25 12:52:39 [INFO] Prompt ID: 50eb302c-6ee7-4bb5-bab9-71624c40271b
+2023-08-25 12:52:54 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Define the class geeks
+class geeks:
+    def __init__(self, id, candidat_exper, candidat_bacplus):
+        self.id = id
+        self.candidat_exper = candidat_exper
+        self.candidat_bacplus = candidat_bacplus
+
+# Create the dataframe
+data = {'geeks': [geeks(0, 5, 3), geeks(1, 7, 4), geeks(2, 6, 5), geeks(3, 8, 2)]}
+df = pd.DataFrame(data)
+
+# Sort the dataframe by candidat_exper and candidat_bacplus in descending order
+df_sorted = df.sort_values(by=['geeks.candidat_exper', 'geeks.candidat_bacplus'], ascending=False)
+
+# Get the top two rows with the highest candidat_exper and candidat_bacplus
+top_two_ids = df_sorted.head(2)['geeks.id'].tolist()
+
+top_two_ids
+                        ```
+                    
+2023-08-25 12:52:54 [INFO] 
+Code running:
+```
+class geeks:
+
+    def __init__(self, id, candidat_exper, candidat_bacplus):
+        self.id = id
+        self.candidat_exper = candidat_exper
+        self.candidat_bacplus = candidat_bacplus
+
+
+df_sorted = df.sort_values(by=['geeks.candidat_exper', 'geeks.candidat_bacplus'], ascending=False)
+top_two_ids = df_sorted.head(2)['geeks.id'].tolist()
+top_two_ids
+```
+2023-08-25 12:52:54 [WARNING] Error of executing code
+2023-08-25 12:53:42 [INFO] Question: which are the tow best candidat_id with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 12:53:42 [INFO] Running PandasAI with openai LLM...
+2023-08-25 12:53:42 [INFO] Prompt ID: 9f8caec7-3036-4cee-95ca-5bed9c7202fe
+2023-08-25 12:54:09 [INFO] 
+                        Code generated:
+                        ```
+                        df['candidat_exper'] = df['candidat_exper'].astype(int)
+df['candidat_bacplus'] = df['candidat_bacplus'].astype(int)
+df.sort_values(by=['candidat_exper', 'candidat_bacplus'], ascending=False, inplace=True)
+top_two_candidates = df.head(2)['candidat_id'].tolist()
+top_two_candidates
+                        ```
+                    
+2023-08-25 12:54:09 [INFO] 
+Code running:
+```
+df['candidat_exper'] = df['candidat_exper'].astype(int)
+df['candidat_bacplus'] = df['candidat_bacplus'].astype(int)
+df.sort_values(by=['candidat_exper', 'candidat_bacplus'], ascending=False, inplace=True)
+top_two_candidates = df.head(2)['candidat_id'].tolist()
+top_two_candidates
+```
+2023-08-25 12:54:09 [WARNING] Error of executing code
+2023-08-25 12:54:35 [INFO] Question: which are the tow best geeks with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 12:54:35 [INFO] Running PandasAI with openai LLM...
+2023-08-25 12:54:35 [INFO] Prompt ID: 1ef4678c-325a-4d7e-9c64-56d707de0068
+2023-08-25 12:55:20 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Define the geeks class
+class geeks:
+    def __init__(self, candidat_exper, candidat_bacplus):
+        self.candidat_exper = candidat_exper
+        self.candidat_bacplus = candidat_bacplus
+
+# Create the dataframe
+data = {'geek': [geeks(5, 3), geeks(7, 4), geeks(2, 5), geeks(6, 2)]}
+df = pd.DataFrame(data)
+
+# Sort the dataframe by candidat_exper and candidat_bacplus in descending order
+df = df.sort_values(by=['geek.candidat_exper', 'geek.candidat_bacplus'], ascending=False)
+
+# Get the top two geeks with the highest candidat_exper and candidat_bacplus
+top_geeks = df.head(2)
+
+# Print the top geeks
+print(top_geeks)
+                        ```
+                    
+2023-08-25 12:55:20 [INFO] 
+Code running:
+```
+class geeks:
+
+    def __init__(self, candidat_exper, candidat_bacplus):
+        self.candidat_exper = candidat_exper
+        self.candidat_bacplus = candidat_bacplus
+
+
+top_geeks = df.head(2)
+print(top_geeks)
+```
+2023-08-25 12:55:20 [WARNING] Error of executing code
+2023-08-25 12:55:47 [INFO] Question: which are the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 12:55:47 [INFO] Running PandasAI with openai LLM...
+2023-08-25 12:55:47 [INFO] Prompt ID: b33a6a09-5100-46bb-ba29-a58b97312f19
+2023-08-25 12:55:49 [INFO] 
+                        Code generated:
+                        ```
+                        df['candidat_exper'].max()
+df['candidat_bacplus'].max()
+                        ```
+                    
+2023-08-25 12:55:49 [INFO] 
+Code running:
+```
+df['candidat_exper'].max()
+df['candidat_bacplus'].max()
+```
+2023-08-25 12:55:49 [WARNING] Error of executing code
+2023-08-25 12:56:35 [INFO] Question: give me the great value
+2023-08-25 12:56:35 [INFO] Running PandasAI with openai LLM...
+2023-08-25 12:56:35 [INFO] Prompt ID: 8aada49f-42ab-4c0f-9d33-270a613e89fa
+2023-08-25 12:56:37 [INFO] 
+                        Code generated:
+                        ```
+                        df['great']
+                        ```
+                    
+2023-08-25 12:56:37 [INFO] 
+Code running:
+```
+df['great']
+```
+2023-08-25 12:56:37 [WARNING] Error of executing code
+2023-08-25 12:59:36 [INFO] Question: which are the tow best with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 12:59:36 [INFO] Running PandasAI with openai LLM...
+2023-08-25 12:59:36 [INFO] Prompt ID: a68731a2-3409-4ffd-a7ba-d2f2561adf2f
+2023-08-25 13:00:36 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-25 13:00:40 [INFO] Question: which are the tow best with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:00:40 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:00:40 [INFO] Prompt ID: 0d001533-69b8-4d49-b0db-ed7a8ad22acd
+2023-08-25 13:00:40 [INFO] Question: which are the tow best with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:00:40 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:00:40 [INFO] Prompt ID: f86e0dc1-7358-4264-8982-a82b2a57e0d5
+2023-08-25 13:00:40 [INFO] Question: which are the tow best with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:00:40 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:00:40 [INFO] Prompt ID: 98b2264b-bda1-49cf-ba38-9b6f41ba4e8f
+2023-08-25 13:01:22 [INFO] Question: which are the tow best ids with the heighest certificates and experiences ?
+2023-08-25 13:01:22 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:01:22 [INFO] Prompt ID: 397b6146-030c-4267-878a-d01c78838aaf
+2023-08-25 13:01:22 [INFO] Using cached response
+2023-08-25 13:01:22 [INFO] 
+Code running:
+```
+df.nlargest(2, ['certificates', 'experiences'])['id']
+```
+2023-08-25 13:01:22 [INFO] Answer: 5    6
+1    2
+Name: id, dtype: object
+2023-08-25 13:01:22 [INFO] Executed in: 0.016788721084594727s
+2023-08-25 13:01:41 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-25 13:01:45 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:01:45 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:01:45 [INFO] Prompt ID: 4ccc29cf-1355-4bf0-a496-64a29ede9fb4
+2023-08-25 13:01:45 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:01:45 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:01:45 [INFO] Prompt ID: f2a8dffa-87b9-415b-b3bf-744dd85ffac2
+2023-08-25 13:01:45 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:01:45 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:01:45 [INFO] Prompt ID: 805d1342-6cdf-4ead-8ba4-6e6e468f3a77
+2023-08-25 13:01:55 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-25 13:01:59 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:01:59 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:01:59 [INFO] Prompt ID: 73eee1c8-2c41-4e0c-add6-2169498f345c
+2023-08-25 13:01:59 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:01:59 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:01:59 [INFO] Prompt ID: 9463ee1b-fb2e-4217-a1db-a0a99aea84c5
+2023-08-25 13:03:06 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:03:06 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:03:06 [INFO] Prompt ID: d046df3a-31e1-4605-956f-3a41757b8508
+2023-08-25 13:03:06 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:03:06 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:03:06 [INFO] Prompt ID: 882786f5-ede1-44a8-95a3-50d38330a83f
+2023-08-25 13:20:30 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:20:30 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:20:30 [INFO] Prompt ID: c50ffe5e-fd39-4e6d-937c-4fbc1e26ea79
+2023-08-25 13:20:43 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+df = pd.DataFrame({'id': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+                   'candidat_exper': [5, 3, 7, 2, 4, 6, 1, 9, 8, 10, 12],
+                   'candidat_bacplus': [True, False, True, False, True, False, True, False, True, False, True]})
+
+# Sort the dataframe by candidat_exper and candidat_bacplus in descending order
+df_sorted = df.sort_values(by=['candidat_exper', 'candidat_bacplus'], ascending=False)
+
+# Get the top two ids with the highest candidat_exper and candidat_bacplus
+top_two_ids = df_sorted['id'].head(2).tolist()
+
+top_two_ids
+                        ```
+                    
+2023-08-25 13:20:43 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['candidat_exper', 'candidat_bacplus'], ascending=False)
+top_two_ids = df_sorted['id'].head(2).tolist()
+top_two_ids
+```
+2023-08-25 13:20:43 [WARNING] Error of executing code
+2023-08-25 13:20:43 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:20:43 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:20:43 [INFO] Prompt ID: 5af177bc-c9a8-439a-8e1e-b097a6f5fc20
+2023-08-25 13:20:43 [INFO] Using cached response
+2023-08-25 13:20:43 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['candidat_exper', 'candidat_bacplus'], ascending=False)
+top_two_ids = df_sorted['id'].head(2).tolist()
+top_two_ids
+```
+2023-08-25 13:20:43 [WARNING] Error of executing code
+2023-08-25 13:20:47 [WARNING] Error of executing code
+2023-08-25 13:20:47 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-25 13:21:05 [WARNING] Error of executing code
+2023-08-25 13:21:05 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-25 13:21:18 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-25 13:21:22 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:21:22 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:21:22 [INFO] Prompt ID: 5c3ef017-fb39-45a6-b80c-eb5fab4bf27c
+2023-08-25 13:21:22 [INFO] Using cached response
+2023-08-25 13:21:22 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['candidat_exper', 'candidat_bacplus'], ascending=False)
+top_two_ids = df_sorted['id'].head(2).tolist()
+top_two_ids
+```
+2023-08-25 13:21:22 [WARNING] Error of executing code
+2023-08-25 13:21:33 [WARNING] Error of executing code
+2023-08-25 13:21:33 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-25 13:21:44 [WARNING] Error of executing code
+2023-08-25 13:21:44 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-25 13:21:45 [INFO] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-N8Jg0gSzLHKureBQLSwJccez on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-08-25 13:21:45 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:21:45 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:21:45 [INFO] Prompt ID: c8b539ba-682b-487b-94aa-47cb68f277f7
+2023-08-25 13:21:45 [INFO] Using cached response
+2023-08-25 13:21:45 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['candidat_exper', 'candidat_bacplus'], ascending=False)
+top_two_ids = df_sorted['id'].head(2).tolist()
+top_two_ids
+```
+2023-08-25 13:21:45 [WARNING] Error of executing code
+2023-08-25 13:21:45 [INFO] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-N8Jg0gSzLHKureBQLSwJccez on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-08-25 13:22:11 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:22:11 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:22:11 [INFO] Prompt ID: d28d8bb1-4f8b-4be8-812c-70b1eb960981
+2023-08-25 13:22:11 [INFO] Using cached response
+2023-08-25 13:22:11 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['candidat_exper', 'candidat_bacplus'], ascending=False)
+top_two_ids = df_sorted['id'].head(2).tolist()
+top_two_ids
+```
+2023-08-25 13:22:11 [WARNING] Error of executing code
+2023-08-25 13:22:15 [WARNING] Error of executing code
+2023-08-25 13:22:15 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-25 13:22:33 [WARNING] Error of executing code
+2023-08-25 13:22:33 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-25 13:22:37 [WARNING] Error of executing code
+2023-08-25 13:22:37 [WARNING] Failed to execute code with a correction framework [retry number: 3]
+2023-08-25 13:22:37 [ERROR] Unable to fix KeyError with error correction framework
+2023-08-25 13:22:37 [INFO] Question: which are the tow best ids with the heighest candidat_exper and candidat_bacplus ?
+2023-08-25 13:22:37 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:22:37 [INFO] Prompt ID: ce0e29dc-a75a-4804-8c91-a71589ff688b
+2023-08-25 13:22:37 [INFO] Using cached response
+2023-08-25 13:22:37 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['candidat_exper', 'candidat_bacplus'], ascending=False)
+top_two_ids = df_sorted['id'].head(2).tolist()
+top_two_ids
+```
+2023-08-25 13:22:37 [WARNING] Error of executing code
+2023-08-25 13:22:37 [INFO] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-N8Jg0gSzLHKureBQLSwJccez on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-08-25 13:24:24 [INFO] Question: give me all candidat_id
+2023-08-25 13:24:24 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:24:24 [INFO] Prompt ID: 0fda7495-74de-4b8f-9c21-0e68caf406fd
+2023-08-25 13:24:26 [INFO] 
+                        Code generated:
+                        ```
+                        df['candidat_id']
+                        ```
+                    
+2023-08-25 13:24:26 [INFO] 
+Code running:
+```
+df['candidat_id']
+```
+2023-08-25 13:24:26 [WARNING] Error of executing code
+2023-08-25 13:24:26 [INFO] Question: give me all candidat_id
+2023-08-25 13:24:26 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:24:26 [INFO] Prompt ID: a9e055b3-8af7-435d-bf6a-63ee6b199e04
+2023-08-25 13:24:26 [INFO] Using cached response
+2023-08-25 13:24:26 [INFO] 
+Code running:
+```
+df['candidat_id']
+```
+2023-08-25 13:24:26 [WARNING] Error of executing code
+2023-08-25 13:24:27 [WARNING] Error of executing code
+2023-08-25 13:24:27 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-25 13:24:28 [WARNING] Error of executing code
+2023-08-25 13:24:28 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-25 13:24:29 [INFO] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-N8Jg0gSzLHKureBQLSwJccez on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-08-25 13:27:55 [INFO] Question: which are the tow best ids with the heighest certificates and experiences ?
+2023-08-25 13:27:55 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:27:55 [INFO] Prompt ID: fa2f2e99-38ce-4d54-8d13-a137c63e2916
+2023-08-25 13:27:57 [INFO] 
+                        Code generated:
+                        ```
+                        df.nlargest(2, ['certificates', 'experiences'])['id']
+                        ```
+                    
+2023-08-25 13:27:57 [INFO] 
+Code running:
+```
+df.nlargest(2, ['certificates', 'experiences'])['id']
+```
+2023-08-25 13:27:57 [INFO] Answer: 5    6
+1    2
+Name: id, dtype: object
+2023-08-25 13:27:57 [INFO] Executed in: 2.1668753623962402s
+2023-08-25 13:27:58 [INFO] Question: which are the tow best ids with the heighest certificates and experiences ?
+2023-08-25 13:27:58 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:27:58 [INFO] Prompt ID: 9a367567-b522-48ba-a02d-2d279a337a2b
+2023-08-25 13:27:58 [INFO] Using cached response
+2023-08-25 13:27:58 [INFO] 
+Code running:
+```
+df.nlargest(2, ['certificates', 'experiences'])['id']
+```
+2023-08-25 13:27:58 [INFO] Answer: 5    6
+1    2
+Name: id, dtype: object
+2023-08-25 13:27:58 [INFO] Executed in: 0.031233549118041992s
+2023-08-25 13:28:25 [INFO] Question: which are the tow best ids with the heighest certificates and experiences ?
+2023-08-25 13:28:25 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:28:25 [INFO] Prompt ID: dae38533-b230-4ad3-852d-8096ef3f3df4
+2023-08-25 13:28:25 [INFO] Using cached response
+2023-08-25 13:28:25 [INFO] 
+Code running:
+```
+df.nlargest(2, ['certificates', 'experiences'])['id']
+```
+2023-08-25 13:28:25 [INFO] Answer: 5    6
+1    2
+Name: id, dtype: object
+2023-08-25 13:28:25 [INFO] Executed in: 0.017752647399902344s
+2023-08-25 13:28:45 [INFO] Question: which are the tow best ids with the heighest certificates and experiences ?
+2023-08-25 13:28:45 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:28:45 [INFO] Prompt ID: 46bd8ba5-4185-4bfc-baf4-9db8a7722b9e
+2023-08-25 13:28:45 [INFO] Using cached response
+2023-08-25 13:28:45 [INFO] 
+Code running:
+```
+df.nlargest(2, ['certificates', 'experiences'])['id']
+```
+2023-08-25 13:28:45 [INFO] Answer: 5    6
+1    2
+Name: id, dtype: object
+2023-08-25 13:28:45 [INFO] Executed in: 0.017800092697143555s
+2023-08-25 13:29:15 [INFO] Question: which are the tow best ids with the heighest certificates and experiences ?
+2023-08-25 13:29:15 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:29:15 [INFO] Prompt ID: 34ec2839-8c4c-45dd-8b7a-6f34b9d742d8
+2023-08-25 13:29:15 [INFO] Using cached response
+2023-08-25 13:29:15 [INFO] 
+Code running:
+```
+df.nlargest(2, ['certificates', 'experiences'])['id']
+```
+2023-08-25 13:29:15 [INFO] Answer: 5    6
+1    2
+Name: id, dtype: object
+2023-08-25 13:29:15 [INFO] Executed in: 0.017658472061157227s
+2023-08-25 13:29:36 [INFO] Question: which are the tow best ids with the heighest certificates and experiences ?
+2023-08-25 13:29:36 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:29:36 [INFO] Prompt ID: b137a839-4a11-40f0-adac-4804b38521b9
+2023-08-25 13:29:36 [INFO] Using cached response
+2023-08-25 13:29:36 [INFO] 
+Code running:
+```
+df.nlargest(2, ['certificates', 'experiences'])['id']
+```
+2023-08-25 13:29:36 [INFO] Answer: 5    6
+1    2
+Name: id, dtype: object
+2023-08-25 13:29:36 [INFO] Executed in: 0.009760141372680664s
+2023-08-25 13:39:48 [INFO] Question: which are the tow best ids with the heighest certificates and experiences ?
+2023-08-25 13:39:48 [INFO] Running PandasAI with openai LLM...
+2023-08-25 13:39:48 [INFO] Prompt ID: 0e0dd09b-d705-4629-aabf-5970813af13c
+2023-08-25 13:39:48 [INFO] Using cached response
+2023-08-25 13:39:48 [INFO] 
+Code running:
+```
+df.nlargest(2, ['certificates', 'experiences'])['id']
+```
+2023-08-25 13:39:48 [INFO] Answer: 5    6
+1    2
+Name: id, dtype: object
+2023-08-25 13:39:48 [INFO] Executed in: 0.016501903533935547s
+2023-08-25 13:45:45 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-30 23:49:02 [INFO] Question: which are the tow best Candidatures with the heighest candid_canexper and candid_canbacplus ?
+2023-08-30 23:49:02 [INFO] Running PandasAI with openai LLM...
+2023-08-30 23:49:02 [INFO] Prompt ID: 6004b908-02bf-48c9-8854-bdb80e93ff01
+2023-08-30 23:49:07 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+data = {'candid_canexper': [0, 1, 0],
+        'candid_canbacplus': ['afc', 'bmci', 'afc']}
+
+df = pd.DataFrame(data)
+
+df_sorted = df.sort_values(by=['candid_canexper', 'candid_canbacplus'], ascending=False)
+top_two = df_sorted.head(2)
+
+top_two
+                        ```
+                    
+2023-08-30 23:49:07 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['candid_canexper', 'candid_canbacplus'], ascending=False)
+top_two = df_sorted.head(2)
+top_two
+```
+2023-08-30 23:49:07 [WARNING] Error of executing code
+2023-08-30 23:49:11 [INFO] Question: which are the tow best Candidatures with the heighest candid_canexper and candid_canbacplus ?
+2023-08-30 23:49:11 [INFO] Running PandasAI with openai LLM...
+2023-08-30 23:49:11 [INFO] Prompt ID: a9637a44-4366-4def-a2c0-86e9143a7156
+2023-08-30 23:49:11 [INFO] Using cached response
+2023-08-30 23:49:11 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['candid_canexper', 'candid_canbacplus'], ascending=False)
+top_two = df_sorted.head(2)
+top_two
+```
+2023-08-30 23:49:11 [WARNING] Error of executing code
+2023-08-30 23:49:14 [WARNING] Error of executing code
+2023-08-30 23:49:14 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-30 23:49:17 [WARNING] Error of executing code
+2023-08-30 23:49:17 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-30 23:49:18 [INFO] error_code=rate_limit_exceeded error_message='Rate limit reached for default-gpt-3.5-turbo in organization org-N8Jg0gSzLHKureBQLSwJccez on requests per min. Limit: 3 / min. Please try again in 20s. Contact us through our help center at help.openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+2023-08-31 00:02:19 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-31 00:02:32 [INFO] Question: which are the tow best Candidatures with the heighest candid_canexper and candid_canbacplus ?
+2023-08-31 00:02:32 [INFO] Running PandasAI with openai LLM...
+2023-08-31 00:02:32 [INFO] Prompt ID: 60aa330b-7cec-42a1-945c-c832bbe3a26a
+2023-08-31 00:02:32 [INFO] Using cached response
+2023-08-31 00:02:32 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['candid_canexper', 'candid_canbacplus'], ascending=False)
+top_two = df_sorted.head(2)
+top_two
+```
+2023-08-31 00:02:32 [WARNING] Error of executing code
+2023-08-31 00:02:35 [WARNING] Error of executing code
+2023-08-31 00:02:35 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-31 00:02:37 [WARNING] Error of executing code
+2023-08-31 00:02:37 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-31 00:02:40 [WARNING] Error of executing code
+2023-08-31 00:02:40 [WARNING] Failed to execute code with a correction framework [retry number: 3]
+2023-08-31 00:02:40 [ERROR] Unable to fix KeyError with error correction framework
+2023-08-31 00:03:09 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-31 00:03:19 [INFO] Question: which are the tow best Candidatures  ?
+2023-08-31 00:03:19 [INFO] Running PandasAI with openai LLM...
+2023-08-31 00:03:19 [INFO] Prompt ID: 1694e515-930a-4eee-b837-d8819488dfce
+2023-08-31 00:03:20 [INFO] 
+                        Code generated:
+                        ```
+                        df.sort_values(by=0, ascending=False).head(2)
+                        ```
+                    
+2023-08-31 00:03:20 [INFO] 
+Code running:
+```
+df.sort_values(by=0, ascending=False).head(2)
+```
+2023-08-31 00:03:20 [WARNING] Error of executing code
+2023-08-31 00:11:19 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-31 00:12:28 [INFO] Question: which are the tow best Candidats with the heighest certificates and experiences ?
+2023-08-31 00:12:28 [INFO] Running PandasAI with openai LLM...
+2023-08-31 00:12:28 [INFO] Prompt ID: 057edcfd-6943-4869-95e4-70b2c80cf53e
+2023-08-31 00:12:32 [INFO] 
+                        Code generated:
+                        ```
+                        df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidat'].tolist()
+top_candidates
+                        ```
+                    
+2023-08-31 00:12:32 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidat'].tolist()
+top_candidates
+```
+2023-08-31 00:12:32 [INFO] Answer: ['jihad 1', 'jihad']
+2023-08-31 00:12:32 [INFO] Executed in: 3.2467563152313232s
+2023-08-31 00:22:38 [INFO] Question: which are the tow best Candidats with the heighest certificates and experiences ?
+2023-08-31 00:22:38 [INFO] Running PandasAI with openai LLM...
+2023-08-31 00:22:38 [INFO] Prompt ID: e53193ba-b0a7-4daa-8468-a000b7c1eef5
+2023-08-31 00:22:38 [INFO] Using cached response
+2023-08-31 00:22:38 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidat'].tolist()
+top_candidates
+```
+2023-08-31 00:22:38 [INFO] Answer: ['jihad 1', 'jihad']
+2023-08-31 00:22:38 [INFO] Executed in: 0.002991199493408203s
+2023-08-31 00:22:42 [INFO] Question: which are the tow best Candidats with the heighest certificates and experiences ?
+2023-08-31 00:22:42 [INFO] Running PandasAI with openai LLM...
+2023-08-31 00:22:42 [INFO] Prompt ID: 2c94880a-ba61-4fd9-bf53-6f4740916999
+2023-08-31 00:22:42 [INFO] Using cached response
+2023-08-31 00:22:42 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidat'].tolist()
+top_candidates
+```
+2023-08-31 00:22:42 [INFO] Answer: ['jihad 1', 'jihad']
+2023-08-31 00:22:42 [INFO] Executed in: 0.00994563102722168s
+2023-08-31 00:26:29 [INFO] Question: which are the tow best Candidats with the heighest certificates and experiences ?
+2023-08-31 00:26:29 [INFO] Running PandasAI with openai LLM...
+2023-08-31 00:26:29 [INFO] Prompt ID: 89fa6188-fbe6-4762-81d6-c167dc58e8fa
+2023-08-31 00:26:29 [INFO] Using cached response
+2023-08-31 00:26:29 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidat'].tolist()
+top_candidates
+```
+2023-08-31 00:26:29 [INFO] Answer: ['jihad 1', 'jihad']
+2023-08-31 00:26:29 [INFO] Executed in: 0.0039899349212646484s
+2023-08-31 00:27:17 [INFO] Question: which are the tow best Candidats with the heighest certificates and experiences ?
+2023-08-31 00:27:17 [INFO] Running PandasAI with openai LLM...
+2023-08-31 00:27:17 [INFO] Prompt ID: 0e2a62f5-74dc-4b0d-8e08-e9e8498faf6c
+2023-08-31 00:27:17 [INFO] Using cached response
+2023-08-31 00:27:17 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['certificates', 'experiences'], ascending=False)
+top_candidates = df_sorted.head(2)['candidat'].tolist()
+top_candidates
+```
+2023-08-31 00:27:17 [INFO] Answer: ['jihad 1', 'jihad']
+2023-08-31 00:27:17 [INFO] Executed in: 0.0059735774993896484s
+2023-08-31 00:29:32 [INFO] C:\Users\ST\Desktop\djangoP1\djproject1\djapp\views.py changed, reloading.
+2023-08-31 00:31:45 [INFO] Question: which are the tree best Candidats with the heighest certificates and experiences ?
+2023-08-31 00:31:45 [INFO] Running PandasAI with openai LLM...
+2023-08-31 00:31:45 [INFO] Prompt ID: d8d119e4-f37b-4284-9dc8-8a713f38a314
+2023-08-31 00:31:48 [INFO] 
+                        Code generated:
+                        ```
+                        df_sorted = df.sort_values(by=['experiences', 'certificates'], ascending=False)
+top_3_candidats = df_sorted.head(3)['candidat'].tolist()
+top_3_candidats
+                        ```
+                    
+2023-08-31 00:31:48 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['experiences', 'certificates'], ascending=False)
+top_3_candidats = df_sorted.head(3)['candidat'].tolist()
+top_3_candidats
+```
+2023-08-31 00:31:48 [INFO] Answer: ['jihad 1', 'fatima', 'yassin']
+2023-08-31 00:31:48 [INFO] Executed in: 2.812873363494873s
+2023-08-31 01:04:38 [INFO] Question: which are the tree best Candidats with the heighest certificates and experiences ?
+2023-08-31 01:04:38 [INFO] Running PandasAI with openai LLM...
+2023-08-31 01:04:38 [INFO] Prompt ID: 01fc90cd-5a98-4192-a3ab-c463ffe90268
+2023-08-31 01:04:38 [INFO] Using cached response
+2023-08-31 01:04:38 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['experiences', 'certificates'], ascending=False)
+top_3_candidats = df_sorted.head(3)['candidat'].tolist()
+top_3_candidats
+```
+2023-08-31 01:04:38 [INFO] Answer: ['jihad 1', 'fatima', 'yassin']
+2023-08-31 01:04:38 [INFO] Executed in: 0.010375261306762695s
+2023-08-31 01:12:20 [WARNING] Not Found: /favicon.ico
+2023-08-31 01:13:02 [INFO] Question: which are the tree best Candidats with the heighest certificates and experiences ?
+2023-08-31 01:13:02 [INFO] Running PandasAI with openai LLM...
+2023-08-31 01:13:02 [INFO] Prompt ID: c09db333-641d-44d6-979c-8e4dd6ec918b
+2023-08-31 01:13:02 [INFO] Using cached response
+2023-08-31 01:13:02 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by=['experiences', 'certificates'], ascending=False)
+top_3_candidats = df_sorted.head(3)['candidat'].tolist()
+top_3_candidats
+```
+2023-08-31 01:13:02 [INFO] Answer: ['asma', 'jihad 1', 'fatima']
+2023-08-31 01:13:02 [INFO] Executed in: 0.006988525390625s
